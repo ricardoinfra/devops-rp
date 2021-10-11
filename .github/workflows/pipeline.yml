@@ -10,4 +10,4 @@ jobs:
     steps:
       -name: executa comando
       -run: echo "Configuração inicial do pipeline"
-acceptance:
+
