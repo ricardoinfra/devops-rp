@@ -16,8 +16,7 @@ acceptance:
     needs: build
     steps:
     - run: echo "Estágio acceptance"
-   
-  release:
+     release:
     runs-on: ubuntu-latest
     needs: acceptance
     steps:
