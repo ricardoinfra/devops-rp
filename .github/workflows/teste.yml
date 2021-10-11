@@ -1,0 +1,16 @@
+Name: TESTE
+
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+     steps:
+    - name: Eu jA sabia
+      run: echo "Primeiro procedimento"
+Accenptence:
+    runs-on: ubuntu-latest
+    step: JOB 
+      - run: echo "Segundo procedimento"      
+        
