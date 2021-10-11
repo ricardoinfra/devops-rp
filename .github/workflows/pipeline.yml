@@ -9,11 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:            
       - name: executa comando
-       run: echo "Estágio acceptance"
-    runs-on: ubuntu-latest
-    needs: acceptance
-    steps:
-    run: echo "Estágio release"
-  
-
-
+        run: echo "Configuração inicial do pipeline"
