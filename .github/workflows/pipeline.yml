@@ -10,16 +10,5 @@ jobs:
     steps:            
       - name: executa comando
         run: echo "Configuração inicial do pipeline"
-        
-jobs:
-build:        
-acceptance:
-runs-on: ubuntu-latest
-- run: echo "Estágio acceptnce"
 
-release:
-runs-on: ubuntu-latest
-needs: acceptance
-steps:
-- run: echo " Estágio release"
 
