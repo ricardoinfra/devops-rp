@@ -15,12 +15,12 @@ jobs:
 build:        
 acceptance:
 runs-on: ubuntu-latest
-needs: buil
 steps:
 - run: echo "Estágio acceptnce"
 
 release:
 runs-on: ubuntu-latest
+needs: acceptance
 steps:
 - run: echo " Estágio release"
 
