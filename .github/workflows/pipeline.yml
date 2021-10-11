@@ -15,7 +15,6 @@ jobs:
 build:        
 acceptance:
 runs-on: ubuntu-latest
-steps:
 - run: echo "Estágio acceptnce"
 
 release:
