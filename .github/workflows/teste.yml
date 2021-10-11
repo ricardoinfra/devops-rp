@@ -1,16 +1,19 @@
-Name: TESTE
+name: devops-pipeline
 
 on:
   push:
     branches: [ main ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
-     steps:
-    - name: Eu jA sabia
-      run: echo "Primeiro procedimento"
-Accenptence:
+    steps:            
+      - name: executa comando
+        run: echo "Configuração inicial do pipeline"
+		
+  acceptance:
     runs-on: ubuntu-latest
-    step: JOB 
-      - run: echo "Segundo procedimento"      
+    steps: build	
+    run: echo "Estágio acceptance"
+  
         
