@@ -9,8 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:            
       - name: executa comando
-        run: echo "Configuração inicial do pipeline"     
-     needs: build
+    needs: build
     steps:
     run: echo "Estágio acceptance"
     runs-on: ubuntu-latest
