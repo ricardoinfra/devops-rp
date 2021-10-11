@@ -13,7 +13,19 @@ jobs:
 		
   acceptance:
     runs-on: ubuntu-latest
-    steps: build	
-    run: echo "Estágio acceptance"
-  
-        
+    needs: build
+    steps:
+    - run: echo "Estágio acceptance"
+    
+  monitoramento:
+   runs-on: ubuntu-latest
+   needs: acceptance
+   steps:
+   - run: echo "Estágio acceptance"
+   
+  infra:
+    runs-on: ubuntu-latest
+    needs: monitoramento
+    steps:
+    - run: echo "Estágio acceptance"
+   
