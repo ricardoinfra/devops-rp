@@ -20,7 +20,7 @@ acceptance:
     runs-on: ubuntu-latest
     needs: acceptance
     steps:
-    - run: echo "Estágio release"
+    run: echo "Estágio release"
   
 
 
