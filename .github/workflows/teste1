@@ -1,0 +1,22 @@
+name: teste-pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:            
+      - name: executa comando
+        run: echo "Configuração inicial do pipeline"		
+  acceptance:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:    
+      - run: echo "Estágio acceptance"
+  release:
+   runs-on: ubuntu-latest
+   needs: acceptance
+   steps:
+   - run: echo "Estágio release"
