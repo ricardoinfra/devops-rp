@@ -10,13 +10,18 @@ jobs:
     steps:            
       - name: executa comando
         run: echo "Configuração inicial do pipeline"		
-  acceptance:
+  Validando Pontuação:
     runs-on: ubuntu-latest
     needs: build
     steps:    
       - run: echo "Estágio acceptance"
-  release:
+  Pontuação < 62 :
    runs-on: ubuntu-latest
-   needs: acceptance
+   needs: Validando Pontuação
+   steps:
+   - run: echo "Estágio release"
+   Cruzeiro não vai Subir :
+   runs-on: ubuntu-latest
+   needs: Pontuação < 62
    steps:
    - run: echo "Estágio release"
