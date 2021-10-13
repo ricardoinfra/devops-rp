@@ -22,6 +22,6 @@ jobs:
      - run: echo "Estágio release"
    Cruzeiro_não_vai_Subir :
     runs-on: ubuntu-latest
-    needs: Pontuacao_menor_62 :
+    needs: Pontuacao_menor_62
     steps:
      - run: echo "Estágio release"
