@@ -24,4 +24,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: monitoramento
     steps:
-    - run: echo "Estágio acceptance"
+    - run: echo "Estágio acceptance teste"
